@@ -1,0 +1,463 @@
+
+.row1{
+  overflow: hidden;
+
+}
+
+
+.row--testimonials {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding-bottom: 30rem; }
+  .row--testimonials [class^="col-"] {
+    float: left; }
+    .row--testimonials [class^="col-"]::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .row--testimonials [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row--testimonials .col-1-of-2 {
+    width: calc((100% - 6rem)/2); }
+  .row--testimonials .col-1-of-3 {
+    width: calc((100% - 2*6rem)/3); }
+  .row--testimonials .col-1-of-4 {
+    width: calc((100% - 3*6rem)/4); }
+  .row--testimonials .col-2-of-3 {
+    width: calc(((2/3)*((100% - 2*6rem))) + 6rem); }
+  .row--testimonials .col-2-of-4 {
+    width: calc((2*(100% - 3*6rem)/4) + 6rem); }
+  .row--testimonials .col-3-of-4 {
+    width: calc(3*((100% - 3*6rem)/4) + 2 * 6rem); }
+
+
+
+.section-header
+{
+  height: 100%;
+}
+
+.section-initiatives {
+  height: 100%;
+}
+
+.header{
+  position: relative;
+}
+
+.heading-tertiary{
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.u-center-text{
+  text-align: center;
+}
+
+.u-margin-bottom-big{
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium{
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small{
+  margin-bottom: 1rem;
+}
+
+.u-margin-top-big{
+  margin-top: 8rem;
+}
+
+.header-by-line {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  color: white;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  font-weight: bolder;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.8);
+}
+
+
+.header-by-line--line1 {
+  width: 80vw;
+  margin-bottom: 0;
+  font-size: 60px;
+}
+
+
+.header-by-line--line2 {
+  text-transform: uppercase;
+  font-size: 70px;
+
+}
+
+.mission-text {
+
+  color: black;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.mission-readmore:link, .mission-readmore:visited {
+
+  text-decoration: none;
+  color: #73C38E;
+  font-size: 1.5rem;
+
+}
+.vision-text {
+
+  color: white;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.vision-readmore:link, .vision-readmore:visited {
+
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  background-image: none;
+  width: 100vw;
+  height: 450px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+  background-image: none;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+@media(min-width:1200px){
+.c-1{
+  max-width: 80%;
+}
+}
+
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front{
+  /* font-size: 40px;
+  font-weight: bolder; */
+  color: black;
+  opacity: 85%;
+  text-align: center;
+}
+
+.flip-card-front-heading {
+  display: block;
+  padding-top: 120px;
+}
+
+.h-1{
+  /* margin-top: 100px; */
+  font-size: 4rem;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.p-2{
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: lighter;
+  margin-top: 2%;
+}
+.h-2{
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-top: 5%;
+  text-align: left;
+  margin-left: 6%;
+}
+
+.btn:link, .btn:visited {
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  /* makes it a block element */
+  display: inline-block;
+  /* gives a round fillet to the border */
+  border-radius: 10rem;
+  /* transition property -> transition: <property-name-to-be-transitioned> */
+  transition: all 0.2s;
+  position: relative; }
+
+.btn--animated {
+  animation: moveInButton 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+  /* will automatically apply the styles of 0% before the animation starts */ }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  /*black shadow with 20% opacity*/ }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn::after {
+  /*have to specify the content and display property*/
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*have to put transition property in initial state*/
+  transition: all 0.4s; }
+
+
+.btn3{
+
+  height: 50px;
+  width: 130px;
+  border-radius:25px ;
+  background-color: white !important;
+  border-color: white !important;
+  align-items: inherit;
+  
+  
+  }
+  .btn4{
+
+    height: 50px;
+    width: 160px;
+    border-radius:25px ;
+    background-color: white !important;
+    border-color: white !important;
+    align-items: inherit;
+    opacity: 1;
+    
+    
+    }
+
+
+.btn1{
+
+    height: 50px;
+    width: 130px;
+    border-radius:25px ;
+    background-color: #231F20 !important;
+    
+    
+    }
+
+    .btn2{
+
+      min-height: 50px;
+     min-width: 130px;
+      border-radius:25px ;
+      color: #F36A36 !important;
+      background-color: white !important;
+      padding: none;
+      background: transparent;
+      
+      -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+    -khtml-background-size: 100%;
+    background-size: 100%
+   
+      }
+
+  .bottom-div{
+    opacity: 85%;
+  }
+
+  @media(min-width:500px){
+    .row-bottom{
+      height:auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-position-y:inherit;
+    }
+    .bottom-div{
+      opacity: 85%;
+      
+    }
+  }
+
+.section-testimonials {
+
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+
+}
+
+
+
+
+  .story {
+    width: 100%;
+
+    margin: 2rem auto;
+    
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1.6rem;
+    transition: all .25s ease;
+    /* transform: skewX(-12deg); */
+  }
+
+  .story--green {
+    background-size: cover;
+    background-color: #73C38E;
+  }
+  .story--blue {
+    background-size: cover;
+    background-color: #05A1C8;
+  }
+  .story--yellow {
+    background-size: cover;
+    background-color: #F9EE34;
+  }
+  .story--orange {
+    background-size: cover;
+    background-color: #F36A36;
+  }
+
+
+    /* .story > * {
+      transform: skewX(12deg); } */
+    .story__shape {
+      position: relative;
+      width: 15rem;
+      height: 15rem;
+      float: left;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      /* transform: translateX(-3rem) skewX(12deg); */
+      transform: translateX(-3rem); }
+    .story__image {
+      height: 100%;
+      opacity: 1;
+      transform: scale(1.05) translate(-20%,0);
+      transition: all 0.5s ease; }
+    .story__caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      text-align: center;
+      opacity: 0;
+      backface-visibility: hidden;
+      transition: all 0.5s ease; }
+    .story:hover .story__caption {
+      opacity: 1;
+      transform: translate(-50%, -50%); }
+    .story:hover .story__image {
+      transform: scale(1) translate(-20%,0);
+      filter: blur(3px) brightness(80%); }
+    /* .story:hover {
+      transform: scale(1.15);
+      box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+
+    } */
+
+
+
+#spons {
+
+  font-family: monospace;           /*change background color and font from here*/
+  background-color: #575454;
+  color: #fff;
+}
+
+.spons__heading{
+  text-align: center;
+  font-size: 45px;
+  border-bottom: 2px dotted #fff;
+
+}
+.spons__container{
+  background-color: #696868;
+}
+
+@media (max-width:767px){
+
+  .flip-card {
+    height: 600px;
+  }
+}
+
+@media (max-width:400px){
+  .flip-card {
+    height: 750px;
+  }
+
+  .flip-card-front {
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width:991){
+  .section-header
+  {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .section-initiatives {
+    margin-top: 200px;
+    height: 100%;
+  }
+}
