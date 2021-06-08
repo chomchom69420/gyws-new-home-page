@@ -416,24 +416,54 @@ html {
 
     } */
 
+    #spons {
+
+      font-family: monospace;           /*change background color and font from here*/
+      background-color: #FFFFFF;
+      color: #17202A;
+    }
+    
 
 
-#spons {
+    .box{
+      width: 100%;
+      height: 100%;
+      margin: 5px;
+      box-shadow: 0 .2rem 2rem rgba(0, 0, 0, .15);
+      transition: all 0.3s ease;
+    
+    }
+    
+    .box:hover{
+      transform: scale(1.2);
+      box-shadow: 0 .4rem 2rem rgba(0, 0, 0, .15);
+    }
+    
+    .container_image_hov{
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .box img{
+      display: block;
+      width:100%;
+      margin-bottom: 0 !important;
+      border-radius: 1.5rem;
+      background-color: #F9E79F
+    }
 
-  font-family: monospace;           /*change background color and font from here*/
-  background-color: #575454;
-  color: #fff;
-}
 
-.spons__heading{
-  text-align: center;
-  font-size: 45px;
-  border-bottom: 2px dotted #fff;
-
-}
-.spons__container{
-  background-color: #696868;
-}
+    .spons__heading{
+      text-align: center;
+      font-size: 45px;
+      border-bottom: 2px dotted #0000;
+    
+    }
+    .spons__container{
+      background-color: #FFFFFF;
+    }
+    
+    
 
 @media (max-width:767px){
 
@@ -497,7 +527,6 @@ html {
 
 @media (max-width:908px) {
 
-
-
+  /* from here our-mission starts overflowing from top of the site */
 
 }
